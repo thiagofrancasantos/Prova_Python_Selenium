@@ -1,0 +1,66 @@
+{
+  "id": "49c77852-f4da-475a-a725-4093ac33933e",
+  "version": "2.0",
+  "name": "corinthians_site_test",
+  "url": "https://www.corinthians.com.br",
+  "tests": [{
+    "id": "459619f8-6666-4d57-a595-1d1ccb4733cb",
+    "name": "teste_link",
+    "commands": [{
+      "id": "f4962b5a-df16-4e97-a71e-016e96bb1294",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e0f8d45-6d38-427f-bc1e-0cb62155e22c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "befea0d3-9064-4760-a39c-cbd2824da517",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,640.7999877929688)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d36ebab-14c1-48c0-9e43-a3a49720cb35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Futebol Amputados",
+      "targets": [
+        ["linkText=Futebol Amputados", "linkText"],
+        ["css=.col-12:nth-child(5) li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Futebol Amputados')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.corinthians.com.br/clube/modalidades/paradesporto/futebol-amputados')])[2]", "xpath:href"],
+        ["xpath=//div[5]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6849f626-8b0b-4b1f-b04a-4f3c7178907d",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > img",
+      "targets": [
+        ["css=div > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://static.corinthians.com.br/uploads/1584987210b65f2ecd2900ba6ae49a14d9c4b16fb4.jpg')]", "xpath:img"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a9acc193-443a-4e92-8123-ca9afeaa3e94",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["459619f8-6666-4d57-a595-1d1ccb4733cb"]
+  }],
+  "urls": ["https://www.corinthians.com.br/"],
+  "plugins": []
+}
